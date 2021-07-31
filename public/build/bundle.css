@@ -1,0 +1,2 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');:root{--font-main:Lato}.svelte-13ozi5o{box-sizing:border-box;margin:0;padding:0
+  }main.svelte-13ozi5o{display:grid;grid-template-columns:minmax(150px, 25%) 1fr}.body.svelte-13ozi5o{display:flex;flex-flow:column nowrap;justify-content:space-around}.name.svelte-13ozi5o{font-family:var(--font-main);font-weight:700;color:#BB371A;letter-spacing:.1rem}.bio.svelte-13ozi5o{font-family:var(--font-main);font-weight:400}
