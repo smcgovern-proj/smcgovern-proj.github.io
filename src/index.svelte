@@ -1,5 +1,7 @@
 <script lang="ts">
   import Card from './Card.svelte';
+  import Icon from 'svelte-awesome';
+  import { linkedin, github, envelope } from 'svelte-awesome/icons';
 </script>
 
 <main>
@@ -9,6 +11,11 @@
     </div>
     <h1 class="name">SEAN MCGOVERN</h1>
     <p class="bio">Hi! I'm a full-stack web developer and UX-dabbler based in Washington, D.C. I believe in constant self-improvement, in design/dev as a means of advocating for the end user, and in always seasoning your pasta water. Connect with me below:</p>
+    <div class="icon-bar">
+      <Icon data={linkedin} scale="1.5" />
+      <Icon data={github} scale="1.5" />
+      <Icon data={envelope} scale="1.5" />
+    </div>
   </div>
   <div class="body">
     <Card
@@ -55,8 +62,16 @@
     width: 273px;
     height: 273px;
   }
+
   .photo img {
     width: 100%;
+  }
+
+  .icon-bar {
+    width: 85%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
   }
 
 </style>

@@ -1,8 +1,9 @@
 <script lang="ts">
   export let title:string, bg:string, subtitle:string;
+  const handleClick = () => {alert('coming *soon*')};
 </script>
 
-<div class="card" style="--bg: {bg}">
+<div class="card" style="--bg: {bg}" on:click={handleClick}>
   <h1>{title}</h1>
   <h3>{subtitle}</h3>
 </div>
