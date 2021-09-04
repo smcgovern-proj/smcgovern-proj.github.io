@@ -26,9 +26,9 @@
   </div>
   <div class="body">
     <Card
-    title="blossom.map"
-    bg="#F3CEE6"
-    subtitle="Javascript, React, Open Data DC API"
+    title="Pomelo"
+    bg="https://user-images.githubusercontent.com/84145162/132075004-f52a9792-14f4-44cd-ab86-20bb7274fdd5.png"
+    subtitle="Svelte, Express"
     />
   </div>
 </main>
