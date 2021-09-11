@@ -10,18 +10,20 @@
     <div class="photo">
       <img src="./assets/profile-full-cropped.jpg" alt="either me or a corgi"/>
     </div>
-    <h1 class="name">SEAN MCGOVERN</h1>
-    <p class="bio">Hi! I'm a full-stack web developer and UX-dabbler based in Washington, D.C. I believe in constant self-improvement, in design/dev as a means of advocating for the end user, and in always seasoning your pasta water. Connect with me below:</p>
-    <div class="icon-bar">
-      <a href="https://www.linkedin.com/in/seanmcgovern5/">
-        <Icon data={linkedin} scale="1.5" />
-      </a>
-      <a href="https://github.com/smcgovern-proj">
-        <Icon data={github} scale="1.5" />
-      </a>
-      <a href="mailto:smcgovern135@gmail.com">
-        <Icon data={envelope} scale="1.5" />
-      </a>
+    <div class="sidebar-content">
+      <h1 class="name">SEAN MCGOVERN</h1>
+      <p class="bio">Hi! I'm a full-stack web developer and UX-dabbler based in San Francisco. I believe in constant self-improvement, in design/dev as a means of advocating for the end user, and in always seasoning your pasta water. Connect with me below:</p>
+      <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/seanmcgovern5/">
+          <Icon data={linkedin} scale="1.5" />
+        </a>
+        <a href="https://github.com/smcgovern-proj">
+          <Icon data={github} scale="1.5" />
+        </a>
+        <a href="mailto:smcgovern135@gmail.com">
+          <Icon data={envelope} scale="1.5" />
+        </a>
+      </div>
     </div>
   </div>
   <div class="body">
@@ -36,19 +38,20 @@
 <style>
   main {
    display: grid;
-   grid-template-columns: minmax(150px, 25%) 1fr;
+   grid-template-columns: minmax(300px, 25%) 1fr;
   }
 
   .sidebar {
     margin-left: 1rem;
     margin-top: 1rem;
-
   }
+
   .body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
-    margin-left: 6rem;
+    margin-left: 10rem;
+    padding-left: 5rem;
     margin-right: 1rem;
     margin-top: 1rem;
   }
@@ -63,6 +66,7 @@
   .bio {
     font-family: var(--font-main);
     font-weight: 400;
+    text-align: left;
   }
 
   .photo {
@@ -73,10 +77,14 @@
   .photo img {
     width: 100%;
   }
+  
+  .sidebar-content {
+    max-width: 20rem;
+  }
 
   .icon-bar {
-    width: 85%;
     margin-top: 3rem;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }

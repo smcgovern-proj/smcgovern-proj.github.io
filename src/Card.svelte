@@ -10,35 +10,49 @@
   };
 </script>
 
-<div class="card" style="background-image: url({bg})" 
+<div class="card" style="" 
   on:click={handleClick} 
   on:mouseover={handleMouseOver} 
   on:focus={handleMouseOver}
   on:mouseout={handleMouseOut}
   on:blur={handleMouseOut}>
+  <img src={bg} alt="portfolio piece" />
     {#if hover}
-      <h1>{title}</h1> 
-      <h3>{subtitle}</h3> 
+      <div class="card-overlay">
+        <h1>{title}</h1> 
+        <h3>{subtitle}</h3> 
+      </div>
     {/if}
 </div>
 
 <style>
   .card {
-    height: 50vh;
+    max-height: 35rem;
+    max-width: 75rem;
     font-weight: 700;
     box-shadow: 2px 3px 3px rgba(0,0,0,25%);
     color: #fff;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
-    padding-left: 3rem;
-    padding-bottom: 2rem;
   }
 
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-self: center;
+    align-self:  center;
+  }
   .card:hover {
     filter: brightness(.9)
   }
-    
+  
+  .card-overlay {
+    position: absolute;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+  }
   .card h3 {
    margin-top: -.5rem;
    font-style: italic;
