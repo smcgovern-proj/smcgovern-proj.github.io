@@ -8,3 +8,9 @@
 	box-sizing: border-box;
 	font-family: var(--font-main);
 }
+
+html, body{
+  background-color: #F9F6F0;  
+  height: 100%;
+  width: 100%;
+}
