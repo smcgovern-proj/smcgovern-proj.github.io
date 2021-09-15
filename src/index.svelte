@@ -1,7 +1,10 @@
 <script lang="ts">
   import Card from './Card.svelte';
   import Icon from 'svelte-awesome';
+  import Modal from './Modal.svelte';
   import { linkedin, github, envelope } from 'svelte-awesome/icons';
+
+  let showModal = false;
 
 </script>
 
@@ -31,6 +34,13 @@
     title="Pomelo"
     bg="https://user-images.githubusercontent.com/84145162/132075004-f52a9792-14f4-44cd-ab86-20bb7274fdd5.png"
     subtitle="Svelte, Express"
+    redirect="https://github.com/smcgovern-proj/pomelo"
+    />
+    <Card
+    title="Products Service, Caliche"
+    bg="https://user-images.githubusercontent.com/84145162/133371600-f29c2773-4979-4cf1-b1b1-27dfa33106eb.png"
+    subtitle="Express, MongoDB, Pandas"
+    redirect="https://github.com/smcgovern-proj/products-caliche"
     />
   </div>
 </main>
@@ -77,7 +87,7 @@
   .photo img {
     width: 100%;
   }
-  
+
   .sidebar-content {
     max-width: 20rem;
   }
@@ -96,5 +106,4 @@
   a:hover {
     color: #BB371A;
   }
-
 </style>
